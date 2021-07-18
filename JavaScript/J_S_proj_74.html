@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sticky Menu-(74)</title>
+        <style>
+            body{
+                margin: 2px;
+                /* padding: 0px 100px; */
+                background-color: #48d1cc; 
+            }
+            #header{
+                text-align: center;                
+            }
+            /* h1{
+                text-align: center;            background-color: darkgreen;
+                color: yellow;               padding: 10px;                  margin: 4px;
+            } */
+            h2{
+                text-align: center;
+                padding: 20px 20px;
+                font-size: 35px;
+                text-align: center;
+                background-color: darkgreen;
+                color: yellow;
+                padding: 10px;
+                margin: 2px;
+            }
+            img{
+                width: 600px;
+                height: 350px;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 20px;               text-align: justify;
+            }
+            /* .btn{    
+                width: 20px;   height: 20px;      display: inline-block;        border: solid red 2px;
+                border-radius: 50%;               cursor: pointer;
+            } */
+            #logo{
+                width: 190px;
+                height: 190px;
+                border-radius: 50%;
+                padding-bottom: 0;
+            }
+            #menu-bar{
+                text-align: center;
+                background-color: blue;
+                color: whitesmoke;
+            }
+            #menu-bar li{
+                display: inline-block;
+                padding: 15px 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #container{
+                text-align: center;
+                padding: 50px 100px;
+            }
+            .sticky{
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }            
+        </style>
+    </head>
+    <body>
+        <!-- <h1 class="text"></h1> -->
+    
+<div id="header">
+    <img src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\My_Projects\leaves_logo_png.png" id="logo" alt="">
+</div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+<div id="container">
+<h2>About US (Project 4 -Sticky Menu)</h2>
+<img id="about-img" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\My_Projects\background_img.jpeg" alt="">
+
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates eveniet voluptas iste possimus veritatis libero exercitationem id, delectus iusto eaque in, error, consequatur veniam. Libero recusandae commodi modi. Animi, veniam? Blanditiis quibusdam quas voluptates non quo consequuntur exercitationem deleniti quis? Sit, libero quas tempore nostrum laudantium aspernatur in deleniti. Corporis sapiente minus exercitationem aliquam odio quae ex suscipit nihil ullam dolorum modi earum veritatis voluptas, fuga unde asperiores beatae voluptatem rerum quidem quasi! Ratione laudantium, recusandae facilis nesciunt quia ab labore rerum optio enim accusantium, at quo consequuntur iusto, deleniti corrupti saepe quaerat mollitia adipisci! Laudantium, corrupti vitae, repellendus nam in ratione optio, sit quibusdam doloribus magnam nobis quos quas iure recusandae amet? Dolore architecto amet velit omnis, hic quasi optio incidunt ut voluptate a beatae vel tempore error nemo! Quibusdam illum maxime ducimus, dolor vitae ex! Perferendis consequatur atque eaque ab inventore et repellat officiis commodi minima tenetur labore debitis voluptatum quos molestiae, pariatur impedit est omnis, vitae dolorum illo aliquid tempora minus vero at! Porro officiis provident, pariatur voluptas culpa voluptatum dolores laboriosam rem libero iure. Laudantium quae, natus, atque sit, accusantium sunt fugit quod iste optio est inventore dignissimos consectetur! Repudiandae cupiditate numquam libero vero sequi esse veritatis nulla voluptas quae quo. Magnam, quaerat veritatis ullam enim magni dolore. Voluptatibus libero nulla illum repellendus, fuga provident consequuntur qui! Incidunt adipisci consequatur nam, nemo fugit, provident laudantium corrupti aut deserunt nobis autem. Ut, ad necessitatibus doloremque dolore nulla fugit deserunt exercitationem nemo rerum iste doloribus repellat at quidem. Deserunt cumque iusto dolor at veniam laboriosam, nesciunt accusamus saepe repudiandae libero enim tempora perferendis optio iure ex est facere ipsam. Nobis omnis quo veniam nihil recusandae fugiat ad ut modi sed nam. Error, similique. Facere, dolores illum error praesentium consequuntur rerum impedit, voluptatem tempora ipsum et quam doloribus velit quibusdam veniam pariatur tempore ut ducimus sunt laudantium fugiat similique ab. Totam possimus beatae corporis dolorum! Placeat illo quisquam ipsam, quas repellendus eum suscipit, accusantium quod commodi explicabo voluptate itaque ab ea repudiandae est earum ipsum laborum beatae deleniti nam amet. Quisquam recusandae quam adipisci nesciunt porro necessitatibus deleniti, accusantium natus vero delectus iure temporibus dicta modi dolores numquam voluptatibus omnis obcaecati aliquid magnam sit nostrum placeat! Maiores delectus illo exercitationem distinctio quisquam beatae culpa eligendi quas accusantium. Ut hic ex labore ipsum consequuntur reprehenderit assumenda quae beatae, necessitatibus voluptatum earum cum sunt commodi facilis est quas vel suscipit.
+</p>
+</div>
+    
+<script>
+    window.addEventListener('scroll', function(){
+    let navbar = document.getElementById("menu-bar");
+
+        if(window.pageYOffset >= 190){
+            navbar.classList.add('sticky');
+        }else{
+            navbar.classList.remove('sticky');
+        }
+            // console.log("ok");
+    });
+</script>
+      
+    </body>
+</html>

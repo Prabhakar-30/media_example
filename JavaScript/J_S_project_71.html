@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS (Temperature Converter-71)</title>
+        <style>
+                body{
+                padding: 50px 100px;
+                background-color: lightskyblue; 
+            }
+            h1{
+                text-align: center;
+            }
+            #container{
+                text-align: center;
+                background-color: #1abc9c;
+                padding: 60px;
+            }
+            .input-div{
+                display: inline-block;
+            }
+            .inp{
+                padding: 5px 10px;
+                margin: 10px;
+                font-size: 30px;
+                font-weight: bold;
+                width: 250px;
+                text-align: center;
+            }
+            label{
+                font-size: 22px;
+                color:darkblue;
+            }
+        </style>
+    </head>
+    <body>
+<!-- Example-71 (Temperature Converter) -->
+<h1>Temperature Converter</h1>
+<div id="container">
+    <div class="input-div">
+        <label>Celsius</label>
+        <input type="number" value="0" id="cel" class="inp">
+    </div>
+    <div class="input-div">
+        <label>Fahrenheit</label>
+        <input type="number" value="32" id="fah" class="inp">
+
+    </div>
+</div>
+
+ <script>
+    var cel = document.getElementById("cel");
+    var fah = document.getElementById("fah");
+
+    cel.addEventListener('input', function(){
+        let c = this.value;
+        let f = (c * 9/5) + 32;
+        // fah.value = f;
+        if(!Number.isInteger(f)){
+            f = f.toFixed(4);
+        }
+        fah.value = f;
+        
+        // console.log('cel changed');
+    });
+
+    fah.addEventListener('input', function(){
+        let f = this.value;
+        let c = (f - 32) *5/9;
+        // cel.value = c;
+        if(!Number.isInteger(c)){
+            c = c.toFixed(4);
+        }
+        cel.value = c;
+
+        // console.log('fah changed'); 
+    });
+
+</script>
+      
+    </body>
+</html>
+
+
+<!-- <h2 style="text-align: center; color: blue;"><u>Tutorials of JavaScript - 66 to 70</u></h2><hr>
+        <h2><p style="color: red; text-align: center;">(Topic No. 66 - Window)</p></h2> -->

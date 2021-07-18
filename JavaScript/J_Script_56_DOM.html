@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript 56 DOM</title>
+        <style>
+            body{
+                background-color:rgb(185, 255, 208);
+            }
+             h2{
+                color: red;     text-align: center;
+            }
+            /* h3{
+                color:green;       text-align: left;     margin-left: 500px;
+            } */
+            /* #btn{
+                background-color: purple;              color:yellow;
+            } */
+            /* example - 54 & 55 */
+            .color{ 
+                background-color: yellow;            color: red;
+            }
+            .dim{
+                border: 1px solid red;               padding: 100px;
+            }
+            
+            </style>
+        </style>
+    </head>
+    <body>
+        <h2><u>Tutorials of JavaScript - 56 DOM Events</u></h2><hr>
+        <script src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\js\JS Files\script_21_40.js"></script>
+        
+        <!-- <p style="text-align: center; font-size: 0.8cm; color: purple;"><b>We are Indians</b></p> -->
+        <p style="text-align: center; color: rebeccapurple; font-size: 0.60cm;"><b>Topic No. 56 (DOM Events)</b></p>
+
+    <!-- Example-56 DOM Events -->
+        <!-- <button id="btn" onclick="btnClick()">Click Me !</button>  (1 type. Inline Register) --> 
+        <button id="btn">Click Me !</button>
+
+<script>
+    //    function btnClick(){
+    //        alert("Button was clicked!");
+    //    }
+
+       let btn = document.getElementById("btn");
+    //    btn.addEventListener('click', btnClick);
+          
+        btn.addEventListener('click', function(){
+            console.log("We can use this anonymous function when we use this at once.");
+            // alert("We can use this anonymous function when we use this at once.");
+          });    
+
+          btn.addEventListener('mouseover', function(){
+            console.log("mouseover is activated");
+            // alert("mouseover is activated");
+          });
+
+          btn.addEventListener('mouseout', function(){
+            console.log("mouseout is activated");
+            // alert("mouseout is activated");
+          });
+
+        // console.log(val);
+</script>
+      
+    </body>
+</html>

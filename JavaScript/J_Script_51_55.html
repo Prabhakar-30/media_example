@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript 51 to 55</title>
+        <style>
+            body{
+                background-color:rgb(185, 255, 208);
+            }
+             h2{
+                color: red;     text-align: center;
+            }
+            /* h3{
+                color:green;       text-align: left;     margin-left: 500px;
+            } */
+            /* #btn{
+                background-color: purple;
+                color:yellow;
+            } */
+            /* example - 54 & 55 */
+            .color{ 
+                background-color: yellow;
+                color: red;
+            }
+            .dim{
+                border: 1px solid red;
+                padding: 100px;
+            }
+            </style>
+        </style>
+    </head>
+    <body>
+        <h2><u>Tutorials of JavaScript 51 to 55</u></h2><hr>
+        <script src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\js\JS Files\script_21_40.js"></script>
+        
+        <!-- <p style="text-align: center; font-size: 0.8cm; color: purple;"><b>We are Indians</b></p> -->
+        <p style="text-align: center; color: rebeccapurple; font-size: 0.60cm;"><b>Topic No. 51 to 55</b></p>
+
+<!-- Example-51 -->
+        <!-- <button id="btn">Send</button> -->
+        <!-- <button id="btn" name="Form2">Send</button> 
+
+<script>
+        let btn = document.getElementById("btn");
+        // btn.setAttribute("name", "Form1");
+        // let val = btn.getAttribute("name");   (Write for add an attribute)
+        // console.log(val);
+        // let val = btn.removeAttribute("name");  (Write for remove an attribute)
+        let val = btn.hasAttribute("class");        (Write for check any attribute available or not)
+        console.log(val);
+</script> -->
+  
+<!-- Example-52  Inline Style -->
+        <!-- <button id="btn"; style="font-size: 0.50cm; margin-left: 50px; color: greenyellow;">Send</button>
+        <button id="btn" name="Form2">Send</button> 
+<script>
+        let btn = document.getElementById("btn");
+        btn.style.cssText += "background: red; font-size: 0.60cm;  border: 1px blue;";
+        // btn.setAttribute("style", "color:red, background-color: blue;");
+        // btn.style.color = "blue";
+        // btn.style.background = "yellow";
+</script>  -->
+
+<!-- Example-53  Get computed CSS 
+        <button id="btn"; name="form1"; style="margin-left: 100px; font-size: 0.50cm; color: red;" >Send computed CSS</button>
+        
+<script>
+        let btn = document.getElementById("btn");
+        let css = getComputedStyle(btn);           console.log(css.color);
+</script>  -->
+
+<!-- Example-54  CSS Classes 
+        <div id="box" class="color dim">
+            <p>This is a dummy Box.</p>
+        </div>
+<script>
+        let box = document.getElementById("box");
+        // console.log(box.className);
+        // box.className += " dim";
+        // console.log(box.classList);
+        // for(let css of box.classList){
+        //     console.log(css);
+        // }
+        box.classList.add("bg");
+        // box.classList.remove("color");
+        // box.classList.replace("color", "dim");
+        // let result = box.classList.contains("tc");
+        // let result = box.classList.toggle("color");
+        // console.log(result);
+</script> -->
+<!-- Example-55  Width and Height of an Element  -->
+        
+        <div id="box" class="color dim">
+            <p>This is a dummy Box.</p>
+        </div>
+<script>
+        let box = document.getElementById("box");
+        // let width =box.offsetWidth;
+        // let height = box.offsetHeight;
+        let width =box.clientWidth;
+        let height = box.clientHeight;
+        console.log(width);
+        console.log(height);
+</script>
+
+    </body>
+</html>

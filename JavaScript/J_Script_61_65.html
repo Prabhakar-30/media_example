@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript 61 to 65</title>
+        <style>
+            body{
+            background-color: lightblue;
+        }
+            /* #box{
+                margin-left: 250px; height: 200px;  width: 200px;     background-color: blueviolet;
+            } */
+            body{
+                /* height: 2000px; */
+                padding: 100px;
+                background-color: cornsilk;
+            }
+            #myDiv{
+                padding: 50px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center; color: blue;"><u>Tutorials of JavaScript - 61 to 65</u></h2><hr>
+        <h2><p style="color: red;"><marquee direction="right">(Topic No. 65 - Browser Object Model)</marquee></p></h2>
+        
+<!-- Example-61 Scroll Events -->
+    
+        <h1>Hello Everyone</h1> 
+     
+        <!-- <button id="btn">Click Me!</button> -->
+<!-- <script> 
+            // window.addEventListener('scroll', function(){
+                // console.log("scrolling...");
+         
+        //     window.addEventListener('wheel', function(event){
+        //     if(event.deltaY < 0){
+        //         console.log("scrolling up..");
+        //     }else if(event.deltaY > 0){
+        //         console.log("scrolling down..");
+        //     }
+        // });
+        // window.addEventListener('scroll', function(){
+        //     if(window.pageYOffset > 150){
+        //         document.body.style.background = "red";
+        //     }else{
+        //         document.body.style.background = "pink";
+        //     }
+        // });
+// </script> -->
+
+<!-- Example-62 Input Events -->
+
+        <!--<form action="">
+            <input type="text" id="myInput">
+        </form>
+        <form action="">
+            <input type="text">
+        </form>
+<script>
+        let x = document.getElementById("myInput");
+        x.addEventListener("focus", myFocusFunction);
+        x.addEventListener("blur", myBlurFunction);
+
+        // x.addEventListener("change", function(){
+        //     console.log(this.value);
+        // });
+        x.addEventListener("input", function(){
+            console.log(this.value);
+        });
+        function myFocusFunction(){
+            x.style.background = "yellow";
+        }
+        function myBlurFunction(){
+            x.style.background = "pink";
+        }
+</script> -->
+
+<!-- Example- 63  Event Bubbling & Event Capturing -->
+
+<!-- <div id="myDiv">
+    <button id="btn">Click Me</button>
+</div> 
+
+<script>
+    let d = document.getElementById("myDiv");
+    let b = document.getElementById("btn");
+
+    b.addEventListener("click", btnClicked);
+    d.addEventListener("click", divClicked);
+    document.body.addEventListener('click', bodyClicked);
+
+    // b.addEventListener("click", btnClicked, true);
+    // d.addEventListener("click", divClicked, true);
+    // document.body.addEventListener('click', bodyClicked, true);
+
+    // function btnClicked(){
+    //     console.log("button clicked....");
+    // }
+
+    function btnClicked(event){
+        console.log("button clicked....");           event.stopPropagation();
+    }
+
+    function divClicked(){
+        console.log("div clicked....");
+    }
+
+    function bodyClicked(){
+        console.log("body clicked....");
+    }
+</script> -->
+
+ <!-- // Example-64  Prevent Default -->
+    
+ <!-- <a href="https://www.google.com"; id="anchor">Click Me</a> <br>
+ <a href="https://www.microsoft.com", style="font-size: 0.70cm;">Click Me</a>
+
+ <form action="" id="myform">
+    <input type="text">      <input type="submit">
+ </form>
+  
+ <script>
+    let form = document.getElementById("myform");
+    form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    })
+
+//     let link = document.getElementById("anchor");
+//     link.addEventListener('click', function(double){
+//     console.log("link click...");
+//     double.preventDefault();
+// });
+</script> -->
+
+<!-- // Example-65 Browser Object Model (BOM) -->
+    
+<script>
+        // var x = "Hello... I am from India";
+        // console.log(window.x);          document.write(x);
+
+        // function xyz(){
+        //     console.log("hi....");
+        // }
+        // xyz();
+        // window.alert("Respect to Nature");
+        document.write("hiii  ");
+        document.write(" Hi, My name is Prabhakar and I am learning JavaScript.");
+</script>
+      
+    </body>
+</html>

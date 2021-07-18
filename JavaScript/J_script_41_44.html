@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript 41 to 44</title>
+        <style>
+            body{
+                background-color:lightskyblue;
+            }
+            h2{
+                color: red;
+                text-align: center;
+                }
+            h3{
+                color:green;
+                text-align: left;
+                margin-left: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><u>Tutorials of JavaScript (41 to 44)</u></h2><hr>
+        <script src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\js\JS Files\script_21_40.js"></script>
+        
+    <h3><table border="3">
+            <tr>
+                <th style="color: red; text-align: center;"><em>Line-1</em></th>
+                <th style="color: red; text-align: center;"><em>Line-2</em></th>
+            </tr>        
+
+        <tr><td>41. Select an element by “Tag Name”</td>  
+             <td>46. Forward </td></tr>
+        <tr><td>42. Query Selector</td>
+            <td>47. Forward</td> </tr>
+        <tr><td>43. Traversing Elements</td>
+            <td>48. Forward</td> </tr>
+        <tr><td>44. innerHTML </td>
+            <td>49. Forward</td> </tr>
+        <tr><td>45. index_45.html (Forward)</td>
+            <td>50. Forward</td> </tr>
+    </table></h3>
+
+    <p style="text-align: center; font-size: 0.8cm; color: purple;"><b>We are Indians</b></p>
+
+    <!-- <ul>
+        <h4><li class="cl">List-1</li></h4>       <h4><li id="first">List-2</li></h4>
+        <h4><li class="cl">List-3</li></h4>           
+    </ul> -->
+
+    <!-- <h4 class="intro">Heading 1</h4>    // (Example of 41 & 42)
+        <div id="div1">
+        <p class="intro">Paragraph 1</p>       <h4 class="intro">Heading 2</h4>
+        <p>Paragraph 2</p>    <h4>Heading 3</h4>
+        <p class="intro">Paragraph 3</p> </div> -->
+
+    <ul> 
+        <li id="intra">List-1</li>          <li>List-2</li>
+        <li>List-3</li>                     <li>List-4</li>
+    </ul> 
+
+    <ul id="parent">
+        <li>List-a</li>          <li id="li2">List-b</li>
+        <li>List-c</li>          <li>List-d</li>
+    </ul>
+    
+    <div id="innhtml">
+        <p> Hello This is Harry Potter Part-I</p>
+    </div>
+
+    <script>
+        // let div1 = document.getElementById("div1");  // (Example No. - 41 Tag Name)
+        // let elm = div1.getElementsByTagName("h4");  
+        // // console.log(elm);
+        // for(let i = 0; i < elm.length; i++){
+        //     elm[i].innerHTML = "Hello Delhi";
+        // }
+        // elm.innerHTML = "<p> Hello Delhi</p>";    // console.log(elm.innerHTML);
+
+        // let elm = document.querySelector("p.intro");  // (Example No. - 42 Query Selector) (Query selector type-1)
+        // elm.innerHTML = "Hello India";   console.log(elm);
+
+        // let elm = document.querySelectorAll("p.intro");  // (Type-2 Query Selector)
+        // console.log(elm);
+        // for(let i = 0; i < elm.length; i++){
+        //     elm[i].innerHTML = "Hello India";
+        // }
+
+        // let elm = document.getElementById("intra");  // (Example No. 43 Traversing Elements)
+        // let prnt = elm.parentElement;
+        // // prnt.innerHTML = "Hello";
+        // console.log(prnt);
+
+        // let elm = document.getElementById("parent");         // let node = elm.firstElementChild;
+        // // let node = elm.lastElementChild;                let node = elm.children;
+        // // console.log(elm);
+        // console.log(node);
+
+        // let elm = document.getElementById("li2");         //let node = elm.previousElementSibling;
+        // let node = elm.nextElementSibling;
+        // console.log(node);
+
+        // for(let i = 0; i < elm.length; i++){
+        // elm[i].innerHTML = "Hello India";
+        // }
+        
+        let elm = document.getElementById("innhtml");     // (Example No. 44 InnerHTML)
+        
+        // let content = elm.innerHTML;                  // console.log(content);
+        elm.innerHTML = "<h1>This is HP Part-8</h1>";
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript 57 to 60</title>
+        <style>
+            body{
+                background-color:rgb(185, 255, 208);
+            }
+             h2{
+                color: red;     text-align: center;
+            }
+            /* h3{
+                color:green;       text-align: left;     margin-left: 500px;
+            } */
+            /* #btn{
+                background-color: purple;              color:yellow;
+            } */
+            /* example - 54 & 55 */
+            .color{ 
+                background-color: yellow;            color: red;
+            }
+            .dim{
+                border: 1px solid red;               padding: 100px;
+            }
+            #mousebox{
+                margin-left: 250px; height: 300px;  width: 300px;     background-color: blueviolet;
+            }
+            </style>
+        </style>
+    </head>
+    <body>
+        <h2><u>Tutorials of JavaScript - 57 to 60</u></h2><hr>
+        <script src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\js\JS Files\script_21_40.js"></script>
+        
+        <!-- <p style="text-align: center; font-size: 0.8cm; color: purple;"><b>We are Indians</b></p> -->
+        <p style="text-align: center; color: rebeccapurple; font-size: 0.60cm;"><b>Topic No. 57 to 60</b></p>
+
+    <!-- Example-57 Remove EventListener
+     
+        <button id="btn">Click Me!</button>
+<script>
+        let btn = document.getElementById("btn");   
+        
+       function Click1(){
+           console.log("Click1 activated!");
+        //    alert("Click1 activated!");
+       }
+       function Click2(){
+           console.log("Click2 activated!");
+        //    alert("Click-2 activated!");
+       }
+
+       btn.addEventListener('click', Click1);
+       btn.addEventListener('click', Click2);
+
+       btn.removeEventListener('click', Click2);
+</script> -->
+
+<!-- Example-58 Page Load Events -->
+
+<!-- <img width="400" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\Arun-Notes of HTML_ JS\images\my_lbs_ima.jpg"> -->
+<!-- <img id="img1" width="400" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\Arun-Notes of HTML_ JS\images\my_lbs_ima.jpg">
+
+<script>
+        window.addEventListener('DOMContentLoaded', function(){
+            console.log("DOM tree created!");    
+        });
+
+        let img = document.getElementById("img1");
+
+        // window.addEventListener('load', function(){
+        //     console.log("Fully Loaded");    
+        // });
+
+        img.addEventListener('load', function(){
+            console.log("Fully Loaded");    
+        });
+</script> -->
+
+<!-- Example-59 Mouse Events -->
+    
+<!-- <div id="mousebox"></div> -->
+<!-- <div id="mousebox" onclick="fun()"></div> -->
+<!-- <div id="mousebox" oncontextmenu="fun()"></div> -->
+<!-- <div id="mousebox" ondblclick="fun()"></div> -->
+<!-- <div id="mousebox" onmousedown="fun()"></div> -->
+<!-- <div id="mousebox" onmouseup="fun()"></div> -->
+<!-- <div id="mousebox" onmouseover="fun()"></div> -->
+    <!-- <div id="mousebox" onmouseout="fun()"></div>
+
+<script>
+    function fun(){
+        // alert("click event");            // alert(" right click event");
+        // alert(" double click event");   // alert(" Mouse down event");
+        // alert(" Mouse up event");       // alert(" Mouse over event");
+        alert(" Mouse out event");
+    }
+</script> -->
+
+<!-- Example-60 Key Down Event -->    
+ 
+      <!-- We do not use any internal, external CSS and Js when we use Key Event  -->
+
+      <!-- <div id="mousebox" onmouseout="fun()"></div> -->
+<script>
+    window.addEventListener('keydown', checkKey);
+
+    function checkKey(keydown){
+        console.log(keydown.key);
+    }
+
+    // window.addEventListener('keyup', checkKey);
+
+    // function checkKey(keyevent){
+    // console.log(keyevent.key);
+// }
+</script>
+      
+    </body>
+</html>

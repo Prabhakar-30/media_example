@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS (Word counter-72)</title>
+        <style>
+            body{
+                padding: 0px 100px;
+                background-color: lightseagreen; 
+            }
+            h1{
+                text-align: center;
+                background-color: darkgreen;
+                color: yellow;
+                padding: 10px;
+                margin: 4px;
+            }
+            #textbox{
+                width: 99.5%;
+                border-color: lightseagreen;
+                font-size: 18px;
+            }
+            p{
+                text-align: center;
+                background-color: darkgreen;
+                font-size: 20px;
+                font-weight: bold;
+                color: yellow;
+                padding: 10px;
+                margin: 2px;
+            }
+        </style>
+    </head>
+    <body>
+<!-- Example-72 Word Counter -->
+
+<h1>Word and Character Counter</h1>
+
+<textarea id="textbox" cols="30" rows="10"></textarea>
+<p>
+    <span id="word">0</span> words and 
+    <span id="char">0</span> characters
+</p>
+
+<script>
+    let textbox = document.getElementById("textbox");
+
+    textbox.addEventListener('input', function(){
+        var text = this.value;
+        let char = text.length;
+        document.getElementById("char").innerHTML = char;
+
+        text = text.trim();
+        let words = text.split(" ");
+        let cleanlist = words.filter(function(elm){
+            return elm != "";
+        });
+        // console.log(words);
+        // console.log(cleanlist);
+        document.getElementById("word").innerHTML = words.length;
+        // document.getElementById("word").innerHTML = cleanlist.length;
+
+        // let word = text.length;
+        // document.getElementById("word").innerHTML = word;
+        // console.log("text");
+    });
+
+</script>
+      
+    </body>
+</html>
+
+<!-- <h2 style="text-align: center; color: blue;"><u>Tutorials of JavaScript - 66 to 70</u></h2><hr>
+        <h2><p style="color: red; text-align: center;">(Topic No. 66 - Window)</p></h2> -->

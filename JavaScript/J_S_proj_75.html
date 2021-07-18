@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation-(75)</title>
+        <style>
+
+            body{
+                margin: 2px;
+                background-color: cadetblue; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                
+            }
+                
+            /* #h2{
+                text-align: center;
+                padding: 10px;
+                font-size: 30px;
+                text-align: center;
+                background-color: darkgreen;
+                color: yellow;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }  */
+
+            /* img{
+                width: 600px;                 height: 350px;                   margin: 0 auto;   
+            } */
+            h3{
+                margin: 0px 0px 10px 0px;
+            }
+            input{
+                width: 200px;
+                margin: 10px 0px;
+                padding: 10px;
+            }
+            input[type="submit"]{
+                width: 220px;
+                background-color: darkgreen;
+                border: 0px;
+                color: yellow;                
+            }
+                                          
+            #form-container{
+                background-color: yellow;
+                text-align: center;
+                padding: 40px;
+            } 
+            .error{
+                color: red;
+                margin: 0px;
+                text-align: left;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <!-- <img id="about-img" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\My_Projects\background_img.jpeg" alt=""> -->
+    
+        <!-- <div id="h2"><h2>About US (Project 5 - Form Validation)</h2></div><br>-->
+        
+        <div id="form-container">
+            <h3>Login</h3>
+            <form action="" onsubmit="return validateForm()">
+                <input type="text" placeholder="User Name" id="username"><br>
+                <p id="userError" class="error"></p>
+                <input type="password" placeholder="Password" id="password"><br>
+                <p id="passError" class="error"></p>
+                <input type="submit">
+            </form>
+        </div>
+
+<script>
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+    let flag = 1;
+
+    function validateForm(){
+        // return false;            return true;
+    if(username.value == ""){
+    document.getElementById("userError").innerHTML = "User Name is empty";
+    flag = 0;
+    // console.log("username empty");
+    }else if(username.value.length <4){
+    document.getElementById("userError").innerHTML = "User Name require min 4 character";
+    flag = 0;
+    }else{
+        document.getElementById("userError").innerHTML = "";
+        flag = 1;
+    }
+    if(password.value == ""){
+        document.getElementById("passError").innerHTML = "Password is empty";
+        flag = 0;
+    }else{
+        document.getElementById("passError").innerHTML = "";
+        flag = 1;
+    }
+    if(flag){
+        return true;
+    }else{
+        return false;
+    }
+    // return false;
+}
+
+</script>
+      
+    </body>
+</html>

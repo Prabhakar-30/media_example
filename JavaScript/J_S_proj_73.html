@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Changer-73)</title>
+        <style>
+            body{
+                padding: 0px 100px;
+                background-color: lightseagreen; 
+            }
+            h1{
+                text-align: center;
+                background-color: darkgreen;
+                color: yellow;
+                padding: 10px;
+                margin: 4px;
+            }
+            h2{
+                text-align: center;
+                padding: 20px 20px;
+                font-size: 35px;
+                color:darkgreen;
+            }
+            img{
+                width: 700px;
+                height: 350px;
+                margin: 0 auto;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+            }
+            
+            /* #image{
+            text-align: center;
+            } */
+
+            .btn{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                border: solid red 2px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            #yellow{
+                background-color: yellow;
+            }
+            #grey{
+                background-color:grey;
+            }
+            #blue{
+                background-color: blue;
+            }
+            #orange{
+                background-color:orange;
+            }
+            #color-switcher{
+                text-align: right;
+            }
+
+            .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="color-switcher">
+           <span class="btn" id="yellow" onclick="changeBG('yellow')"></span>
+           <span class="btn" id="grey" onclick="changeBG('grey')"></span>
+           <span class="btn" id="blue" onclick="changeBG('blue')"></span>
+           <span class="btn" id="orange" onclick="changeBG('orange')"></span>
+        </div>
+
+    <h1 class="text">Background Changer-73</h1>
+    <h2>About Us</h2>
+    <div id="image">
+    <img src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\My_Projects\background_img.jpeg" alt="" class="center">
+    </div>
+
+    <p class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum repudiandae, rem assumenda doloribus optio laborum quaerat, a enim quae esse sed natus voluptas sequi blanditiis consequuntur laudantium ipsa, placeat consectetur! Cumque delectus vero ipsa. Iusto quis perferendis cupiditate, velit fugiat dolor itaque exercitationem vero cum nihil temporibus et placeat nisi veritatis dicta quaerat non consequatur asperiores quasi quia reiciendis laborum. Non blanditiis placeat, fugit dicta ut facere repudiandae consectetur eum quas magni, odit maiores reprehenderit voluptatibus quae voluptatem ea voluptate, minima quasi nemo. Eius facere officia totam non, similique, ea repellat, ut delectus beatae necessitatibus molestias mollitia! Nisi natus beatae odio aliquam incidunt quam facilis, sunt labore enim praesentium voluptatibus iste ipsa id temporibus provident soluta recusandae et alias vel numquam quia. Quasi rerum, magnam dolorem voluptatem nesciunt quam? Obcaecati, reiciendis sint rem distinctio nulla tempore ullam error. Placeat quam dolorum hic nostrum fugit consequatur aspernatur, perspiciatis, rerum neque quidem numquam. Illum veritatis distinctio nam incidunt. Veritatis mollitia voluptatem recusandae suscipit ipsum aliquam dolore perferendis ex facilis autem, at omnis commodi obcaecati rerum labore voluptatum placeat. Voluptatum, a. Eaque laboriosam ipsa modi obcaecati vel nesciunt veritatis rerum beatae laudantium? Sit ex assumenda, fugit officiis doloribus maxime ea! Laudantium alias qui reiciendis saepe dolor laboriosam enim? Molestiae quasi, laborum inventore deleniti est, earum facere quia ab eos sequi vel. Molestiae quaerat voluptas placeat officia adipisci repudiandae aspernatur, nisi explicabo odit nesciunt doloremque velit minus quam perspiciatis expedita? Repellat excepturi atque fugiat voluptas nesciunt. Tenetur distinctio vitae ex soluta. Ullam commodi consequatur eius eligendi eos nulla veniam, provident illum blanditiis fugit saepe natus sint. Quae suscipit explicabo placeat id officiis iure pariatur accusantium repellat iste qui tempore nesciunt temporibus excepturi, esse officia facere. Facilis doloribus saepe ipsum quasi, incidunt perferendis vitae architecto necessitatibus velit ea neque? Culpa qui, itaque minima ducimus illo cumque esse vero exercitationem cupiditate aspernatur fugit, nobis laudantium cum, illum autem repellendus dolorem eum blanditiis. Ullam inventore, in id fugiat, officia modi enim illum optio asperiores autem iusto dicta magnam, adipisci eum a! Consectetur animi, nobis nostrum eos at iusto hic. Iste consectetur accusantium quas harum nostrum odit architecto, unde, voluptatibus quos consequuntur voluptate aspernatur, rerum perspiciatis? Adipisci soluta minima suscipit officiis est commodi autem recusandae optio libero sequi ex quidem, eius labore provident consequuntur fugiat alias nobis, fuga, asperiores ab facilis! Qui aliquam molestias corrupti magni dignissimos tenetur eum quaerat at minima beatae ullam est fuga eius libero enim voluptate suscipit obcaecati, iste deleniti modi repudiandae labore nesciunt. Tempora id adipisci non perferendis aspernatur, necessitatibus soluta. Veritatis libero itaque ipsum consectetur ex ut incidunt omnis doloribus iure repudiandae neque molestias, error eligendi nisi perspiciatis culpa earum repellat porro! Maiores eius iste dolor laudantium reiciendis incidunt sit, beatae debitis libero ad praesentium fuga voluptatum perferendis vitae nulla voluptas, veritatis animi! Dicta totam corporis minima unde ea laborum ad cupiditate ut, placeat, architecto voluptatem optio maxime, voluptates repellat! Magni, quo quisquam. Distinctio placeat, soluta, nostrum suscipit nemo esse accusamus veritatis impedit ea voluptatum, exercitationem iste incidunt harum eos modi.
+    </p>
+    
+<script>
+   function changeBG(color){
+        document.body.style.backgroundColor = color;
+        let txt = document.getElementsByClassName("text");
+        if(color == "blue"){
+            for(let elm of txt){
+            elm.style.color = "white";
+           }
+        }else{
+            for(let elm of txt){
+                elm.style.color = "black";
+            }
+        }
+    }
+
+</script>
+      
+    </body>
+</html>

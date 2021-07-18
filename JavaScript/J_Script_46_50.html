@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript 46 to 50</title>
+        <style>
+            body{
+                background-color:rgb(185, 255, 208);
+            }
+             h2{
+                color: red;     text-align: center;
+                }
+            /* h3{
+                color:green;       text-align: left;     margin-left: 500px;
+            } */
+        </style>
+    </head>
+    <body>
+        <h2><u>Tutorials of JavaScript 46 to 50</u></h2><hr>
+        <script src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\js\JS Files\script_21_40.js"></script>
+        
+        <!-- <p style="text-align: center; font-size: 0.8cm; color: purple;"><b>We are Indians</b></p> -->
+        <p style="text-align: center; color: rebeccapurple; font-size: 0.60cm;"><b>Topic No. 46 to 50</b></p>
+
+        <!-- <div id="add">   
+        <p id="p1">Hello We are in India</p>
+    </div> -->
+<!-- Example-46 -->
+    <!-- <ul id="list"> 
+        <li>List 1</li>          <li>List 2</li>
+        <li>List 3</li>          <li>List 4</li>
+    </ul> -->
+    
+    <!-- Example-47 -->
+    <!-- <ul id="menu"> 
+        <li>Home</li>          <li>Our Products</li>
+        <li>About us</li>      <li>Location</li>
+    </ul> -->
+
+    <!-- Example-48
+        <ul id="menu"> 
+            <li>Home</li>          <li>Our Products</li>
+            <li>About us</li>      <li>Location</li>
+        </ul> -->
+
+    <!-- Example-49
+    <ul id="replace"> 
+        <li>Home</li>          <li>Our Products</li>
+        <li>About us</li>      <li>Location</li>
+    </ul> -->
+
+    <!-- Example-50 (AdjacentHTML) -->
+    <!-- 1. beforebegin-->
+    <div id="adja">
+        <!-- 2. afterbegin -->
+        <h3 style="margin-left: 40px;">Adjacent</h3>   <p style="margin-left: 40px;">This is adjacentHTML</p>
+        <!-- 3. beforeend -->
+    </div>
+    <!--4. afterend -->
+
+    <script>
+        // let list1 = document.getElementById("list");     let item = document.createElement("li");  <!-- Example-46 Insert Before -->
+        // item.textContent ="New List 5";                 let pos = list1.firstElementChild;
+        // let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;
+        // list.insertBefore(item, pos);
+
+        // let parent = document.body;                let elm = document.createElement("h3");
+        // elm.textContent = "This is new Heading";   let list = document.getElementById("list");
+        // parent.insertBefore(elm, list);
+
+        // let parent = document.getElementById("menu");        <!-- Examaple -47 -->
+        // // let elm = parent.firstElementChild;
+        // let elm = parent.firstElementChild.nextElementSibling;
+        // parent.removeChild(elm);
+        // document.body.removeChild(parent);
+
+        // let menu = document.getElementById("menu");                  <!-- Examaple -48 Clone Element -->
+        // let cloneElm = menu.cloneNode(true);              // cloneElm.id="mobile";
+        // // console.log(cloneElm);                        // document.body.appendChild(cloneElm);
+
+        // // <!-- Examaple -49 Replace Element -->
+        // let parent = document.getElementById("replace");       let item = document.createElement("li");
+        // item.textContent = "Services";        
+        // let replace = parent.firstElementChild.nextElementSibling;
+        // parent.replaceChild(item, replace);
+        
+        // <!-- Examaple -50 Replace Element -->
+        let elm = document.getElementById("adja");
+        let html ="<h1>New H1</h1>";
+        elm.insertAdjacentHTML("beforebegin", html);       
+        //  elm.insertAdjacentHTML("afterbegin", html);
+        // elm.insertAdjacentHTML("beforeend", html);          elm.insertAdjacentHTML("afterend", html);
+</script>
+  
+    </body>
+</html>
