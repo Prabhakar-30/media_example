@@ -1,0 +1,228 @@
+body{
+    background-color: rgb(206, 195, 50);
+    margin: 20px;
+    /* border: 3px solid darkblue; */
+}
+
+/* p{
+    font-size: 0.60cm;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgreen;
+    background-color: yellow;
+}
+ #img1{
+     border-radius: 50%;
+     height: 300px;
+     width: 300px;
+ }
+
+ pre{
+     font-size: 0.50cm;
+ }
+
+ button{
+     background-color: darkgreen;
+     color: yellow;
+     font-size: 0.50cm;
+ }
+
+ .input1{
+     margin-top: 8px;
+ }
+
+ #submit-btn{
+     margin-top: 8px;
+     color: yellow;
+     background-color: tomato;
+ } */
+
+ /* Day-4 7/7/2021 (CSS 2nd class) */
+
+/* Select the color for all website we give command like this for color */
+
+ :root{
+     --primary: #F54748;
+     --secondary: #FB4748;
+     --dark: #343F56;
+     --light: #F5E6CA;
+ }
+
+ #img1{
+     border-radius: 10px;
+     width: 300px;
+     height: 400px;
+ }
+
+ h1{
+    color: rgb(0, 180, 140);
+    color: hsl(340, 60%, 50%);
+    background-color: yellow;
+    /* opacity: 0.90; */
+ }
+
+h2{
+    color: tomato;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+p{
+    color: var(--primary);
+    color: hsl(340, 60%, 50%);
+    color: darkblue;
+    font-size: 00.60cm;
+}
+
+/* .bg{
+    background-image: url('highway.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: scroll;
+} */
+/* .bg{
+    border: 3px solid var(--dark);
+    border: 5px dotted red;
+    border-radius: 30px;
+    background-color: var(--primary);
+} */
+
+/* Day-5 9/7/2021 (CSS 3rd class) */
+
+/* .border{
+    border: 2px solid red;
+    height: 400px;
+    width: 75%;
+    border-top-left-radius: 20px;
+    border-radius: 15px;
+} */
+
+.input{
+    display: flex;
+    text-align: center;
+    /* justify-content: space-between; */
+    padding-left: 20px;
+}
+.input1{
+    margin-left: 35px;
+    border-radius: 5px;
+}
+
+#submit-btn{
+    margin-left: 35px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: yellow;
+    font-weight: bold;
+}
+
+.box-model-example{
+    background-color: tomato;
+    color: yellow;
+    text-align: center;
+    /* margin-top: 100px; */
+    /* padding: 30px; */
+    margin: 50px 10px 50px 10px;
+    padding: 50px 0px 50px 0px; 
+    border-radius: 20px;
+}
+
+.img-group{
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+h1{
+    background-color: darkgreen;
+    color: yellow;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    word-spacing: 15px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    /* text-transform: lowercase; */
+    text-shadow: 3px 3px 6px gold;
+}
+
+p{
+    padding: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.link{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: gold;
+}
+
+.link:hover{
+    color: red;
+    border-bottom: 4px solid gold;
+}
+
+/* Day-6 12/7/2021 (CSS 4th class) */
+
+   /* Media Query */
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+.img1, .img2{
+    margin-top: 10px;
+}
+
+/* Filter Property use to make image blur, BnW etc */
+
+.img2{
+    /* filter: blur(3px); */
+    /* filter: grayscale(100%); */
+    /* filter: contrast(70%); */
+    /* filter: brightness(80%) */
+    filter:hue-rotate(40deg)
+}
+
+.grad{
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(orange, white, green);
+}
+
+#para{
+    text-align: center;
+    padding-top: 10%;
+    font-size: .90cm;
+    font-weight: bold;
+    
+}
+
+/* 
+max-width: Should be 576 px or less for mobile
+min-width: Min width shoulb be 768px, than that style will be open in this device with this min-width.
+*/
+
+@media(max-width: 576px){
+    .img1{
+        display: block;
+    }
+}
+
+@media(min-width: 576px){
+    /* .img-hidden{
+        display: none;
+    } */
+    .link-small{
+        display: none;
+    }
+}
+
+/* Day-7 14/7/2021 (CSS 5th class) */
+

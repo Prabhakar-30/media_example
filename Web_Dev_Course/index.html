@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+    body{
+        margin: 25px;
+    }
+    h1{
+    color: rgb(24, 126, 11);
+    background-color: rgb(230, 230, 28);
+    text-align: center;
+    }
+
+    img{
+        width: 100%;
+        height: 70%;
+    }
+
+    @media(min-width: 1226px){
+    #img-1{
+        display: none;
+        }    
+    }
+    
+    @media(min-width: 992px){
+    #img-2{
+        display: none;
+        }
+    }
+
+    @media(min-width: 768px){
+    #img-3{
+        display: none;
+        }
+    }
+
+    @media(min-width: 576px){
+    #img-4{
+        display: none;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+    <h1>Example of Image Resize, when we change the width of device.</h1>    
+    
+    <!-- 
+    max-width: Should be 576 px or less for mobile
+    min-width: Min width shoulb be 768px, than that style will be open in this device with this min-width. -->
+
+    <div id="projects">
+        <img id="img-1 img1" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\Web_Dev_Course\images\India_Gate_1.jpg" alt="">
+        <img id="img-2" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\Web_Dev_Course\sunflower.jpg" alt="">
+        <img id="img-3" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\Web_Dev_Course\nature_2.jpg" alt="">
+        <img id="img-4" src="C:\Users\Prabhakar Bhagwat\OneDrive\Desktop\Web_Dev_Course\highway.jpg" alt="">
+    </div>
+
+</body>
+</html>
+
+
+
+<!-- 
+    <p>
+    git config --global user.name "Prabhakar-30"
+    git config --global user.email "tanwarprabhakar670@gmail.com"    
+    </p>
+
+ -->
